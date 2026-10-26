@@ -129,15 +129,35 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);f
 
 <section class="alt" id="project">
   <div class="wrap">
-    <h2>Featured project</h2>
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Smart Todo AI</h3>
+      <ul>
+        <ul>Built a full-stack smart todo app with React, Node.js/Express and PostgreSQL, featuring:
+          <li>AI-generated subtasks (Google Gemini API) shown as a checklist with progress tracking</li>
+          <li>User registration and login with JWT authentication</li>
+          <li>Manual cloud sync for logged-in users, with deletes and edits carried across devices</li>
+          <li>Dark/light theme and filters (All, Active, Done)</li>
+        </ul> 
+        <li>Deployed with GitHub Actions CI/CD Github Pages and AWS</li> 
+      </ul>
+      <div class="btns">
+        <a class="btn main" href="https://rdvish.github.io/smart-todo-ai/">Open live demo</a>
+        <a class="btn" href="https://github.com/rdvish/smart-todo-ai">View code</a>
+      </div>
+    </div>
     <p class="lead">A team project I redeployed in 2026 and still run live.</p>
     <div class="project">
       <h3>Doc's Meet</h3>
       <p>An online conference platform for doctors with video meetings, chat and image annotation, built with WebRTC, Socket.io and marker.js.</p>
       <ul>
-        <li>Built the meeting-setup page where a host adds co-hosts, participants, time and attachments.</li>
-        <li>Wrote the Express.js route that creates a meeting with a join code and stores participants and roles in MySQL.</li>
-        <li>Added file upload with Multer and deployed the app on Render with a managed MySQL database.</li>
+        <li>Designed and built the meeting-setup homepage (Pug, HTML, CSS, JavaScript)</li>
+        <li>Built the Express.js /next route that creates the meeting with a generated join code and saves hosts, 
+        participants and their roles in MySQL</li>
+        <li>Implemented server-side file upload (Multer) so report images are saved on the server and linked to the 
+        meeting in the database</li>
+        <li>Fixed asynchronous database bugs using async/await, and deployed the app live on Render with a 
+        managed MySQL database (Aiven)</li>
       </ul>
       <div class="btns">
         <a class="btn main" href="https://docsmeet.onrender.com/">Open live demo</a>
